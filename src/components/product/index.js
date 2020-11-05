@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 import './styles.css'
 
@@ -22,5 +22,9 @@ const Product = (props) => {
         </div>  
     </div>        
 }
+
+Product.propTypes = {
+  data: PropTypes.object.isRequired
+};
 
 export default Product

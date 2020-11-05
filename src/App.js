@@ -1,10 +1,8 @@
 import React from 'react';
+import Header from '../src/components/header'
 import Routes from './routes'
 
 import './styles.css'
-
-import Header from '../src/components/header'
-import Main from './pages/main'
 
 const App = () => <div className="App">
     <Header />

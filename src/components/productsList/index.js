@@ -1,6 +1,6 @@
 import React from 'react'
-
 import ProductArticle from '../productArticle'
+import PropTypes from 'prop-types';
 
 import './styles.css'
 
@@ -34,5 +34,13 @@ const ProductsList = (props) => {
         </div>
     </div>
 }
+
+ProductsList.propTypes = {
+    products: PropTypes.array.isRequired,
+    prevPage: PropTypes.func.isRequired, 
+    nextPage: PropTypes.func.isRequired,  
+    currentPage: PropTypes.number.isRequired, 
+    totalPages:  PropTypes.number.isRequired    
+};
 
 export default ProductsList
